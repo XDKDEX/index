@@ -60,7 +60,10 @@ body{
 
 
 
-
+.png{
+    opacity: unset;
+    z-index: 3;
+}
 
 
 
