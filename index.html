@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>主页</title>
+    <!-- <link rel="icon" href="./img/logo/icon.png"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/Clock.js"></script>
+    <!--Aplayer-Start-->
+    <!-- require APlayer -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+	<!-- require MetingJS -->
+	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js server="netease" type="playlist" id="7366701902" fixed="true" order="random" autoplayer="true" lrctype="1"></meting-js>
+    <!--Aplayer-END-->
+</head>
+<body>
+    <script>
+        var backgroundRandom = parseInt(Math.random()*8+1)
+        document.write('<div class="background" style="background-image:url(./img/background/'+backgroundRandom+'.jpg);"></div>');
+    </script>
+    <main class="main">
+        <div class="contents">   
+            <div class="left">
+                <h1>TEST_1</h1>
+            </div>
+            <div class="right">
+                <a>TEST_2</a>
+            </div>
+            <div class="footer" id="hitokoto"></div>
+        </div>
+
+    </main>
+    <p id="demo"></p>
+</body>
+</html>

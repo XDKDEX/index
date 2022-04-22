@@ -1,0 +1,93 @@
+body{
+    background-color:rgb(255, 255, 255);
+    /* -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15%;
+    padding: 0 1em; */
+    z-index: 0;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position:fixed;
+    opacity: .95;
+    background-size: cover;
+}
+.main{
+
+}
+.contents{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    border-radius: 5px;
+	width: 60%;
+	height: 65%;
+    justify-content: center;
+    top: 20%;
+	left: 16.5%;
+}
+.left{
+
+    left: 0;
+}
+.right{
+
+}
+.footer{
+    position: fixed;
+    text-align: center;
+    right: 50%;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    /* src: url("./font/npy.ttf"); */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 5px #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .java{
+    position:fixed;
+    width: 5%;
+    right:0%;
+    bottom:0%;
+    opacity:25%;
+    transition: opacity 1s;
+    transition: width 1s;
+}.java:hover {
+    opacity: 80%;
+    width: 10%;
+} */
+.aplayer{
+    opacity: .4;
+    transition: opacity 2.5s;
+}.aplayer:hover{
+    opacity: .85;
+}
