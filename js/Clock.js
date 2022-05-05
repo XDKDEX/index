@@ -1,4 +1,5 @@
 var now = new Date();
+console.log("A")
 function createtime(){
     var grt = new Date();
     now.setTime(now.getTime()+250);

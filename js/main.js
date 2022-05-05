@@ -1,3 +1,4 @@
+//moedog-hitokoto-API
 var xhr = new XMLHttpRequest();
 xhr.open('get', 'https://api.moedog.org/hitokoto/?encode=json');
 xhr.onreadystatechange = function () {

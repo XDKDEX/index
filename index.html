@@ -8,37 +8,46 @@
     <script src="./js/main.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/Clock.js"></script>
-    <!--Aplayer-Start-->
-    <!-- require APlayer -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-	<!-- require MetingJS -->
-	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-    <meting-js server="netease" type="playlist" id="7366701902" fixed="true" order="random" autoplayer="true" lrctype="1"></meting-js>
-    <!--Aplayer-END-->
+    <!--Plug-in-Start-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <!--Aplayer-Start-->
+            <!--APlayer-->
+	            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+	        <!--APlayer-MetingJS -->
+	        <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+            <meting-js server="netease" type="playlist" id="7366701902" fixed="true" order="random" autoplayer="true" lrctype="1"></meting-js>
+        <!--Aplayer-END-->
+
+    <!--Plug-in-END-->
 </head>
 <body>
+
     <script>
-        var backgroundRandom = parseInt(Math.random()*7+1)
+        var backgroundRandom = parseInt(Math.random()*8+1)
         document.write('<div class="background" style="background-image:url(./img/background/'+backgroundRandom+'.jpg);"></div>');
     </script>
     <main class="main">
-
-        <div class="contents">   
+        <div class="contents">  
             <div class="left">
-                <h1>换架构中...</h1>
+                <h1 class="icon"></h1>
             </div>
             <div class="right">
-                <h1>下方有音乐,歌单:https://music.163.com/#/playlist?id=7366701902</h1>
-		    <br><h1>
-生日快乐!
-<h1></br>
-<a>对不起，我不配<a>
-		    	            <a href="https://xdkdex.github.io/Project-Ir/"></a>
+                <section class="right-section" >
+                    <h1>生日快乐</h1>
+                    <div class="item">               
+                        <a href="file:///C:/Users/Administrator/Desktop/index/index.html" class="Blog" id="Blog"></a>
+                        <a href="https://github.com/XDKDEX" class="Github" id="Github"></a>
+                        <a href="mailto:XDKEX@outlook.com" class="E-Mail" id="E-Mail"></a>
+                        <a></a>
+                        <a></a>
+                        <a></a>
+                        <a></a>
+                    </div>
+                </section>
             </div>
         </div>
-        <footer class="footer" id="hitokoto">
-        </footer>
+        <!-- <footer class="footer" id="hitokoto"></footer> -->
     </main>
 </body>
-</html>
+</html><!--https://xdkdex.github.io/Project-Ir 铱在350°C的熔融氢氧化钠中（未通入空气）极其耐腐蚀，腐蚀率小于0.005mm/年(约3.5mdd)，但400°C以上的熔融氢氧化钠对铱的腐蚀很严重；熔融的氢氧化钾也可以强烈腐蚀铱。-->
