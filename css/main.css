@@ -1,29 +1,28 @@
 body{
     background-color:rgb(255, 255, 255);
+    background-size: cover;
     /* -webkit-font-smoothing: antialiased;
-
     align-items: center;*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     padding: 0 1em;
-    align-items: center;
     text-decoration:none;
+
+    text-align: center;
 }
 .background{
-    width: 100%;
-    height: 100%;
-    left: 0;
+    position: fixed;
+    background-size:cover;
     top: 0;
-    position:fixed;
-    opacity: .95;
+    left: 0;
+    width: 100%;
+    height:100%;
 }
 .main{
     position: relative;
-    display: flex;
     padding: 0 1em;
-
 }
 a{
     text-decoration: none;
@@ -31,11 +30,12 @@ a{
 .contents{
     src:url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.ttf);
     font-family: "FontAwesome";
+    text-align: center;
     background: hsla(0,0%,100%,.8);
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
     border-radius: 5px;
     display: flex;
-    margin: 30% 2em;
+    /* margin: 30% 2em; */
     width: 50em;
     height: 30em;
 }
@@ -47,18 +47,18 @@ a{
     border-radius: 5px 0 0 5px;
     height: 100%;
 }
-.icon{
-    font-size: 2em;
-    animation-iteration-count: infinite;
-}
 
 /*
     右
 */
 .right{
     text-align: center;
-    width: 100%;
-}    
+    flex: 1;
+    padding: 1em;
+}
+.title{
+    margin-top: 1em;
+}
 .item{
     margin: 6em 6em;
     display: flex;
@@ -71,6 +71,7 @@ a{
     font-size: 3em;
     color: #666;
     padding: 10px 10px;
+    display: block;
     transition: transform .3s;
 }.Blog:hover {
     transform: rotate(360deg);
@@ -93,6 +94,13 @@ a{
     transform: rotate(360deg);
 }
 
+.footer{
+    color: white;
+    margin: 1em 1em;
+    text-shadow: 2px 1px 5px #666;
+    text-align: center;
+}  
+
 
 
 .right-section{
@@ -103,7 +111,6 @@ a{
 }
 .fa-home:before{
     content: "\f015";
-
 }
 
 
@@ -146,12 +153,6 @@ a{
 
 
 
-
-.footer{
-    color: white;
-    text-shadow: 2px 1px 5px #666;
-    text-align: center;
-}  
 .aplayer{
     z-index: 20;
     opacity: .4;
