@@ -1,16 +1,13 @@
 body{
     background-color:rgb(255, 255, 255);
     background-size: cover;
-    /* -webkit-font-smoothing: antialiased;
-    align-items: center;*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     padding: 0 1em;
     text-decoration:none;
-
-    text-align: center;
+    text-align: center;   
 }
 .background{
     position: fixed;
@@ -20,12 +17,42 @@ body{
     width: 100%;
     height:100%;
 }
-.main{
-    position: relative;
-    padding: 0 1em;
+.Loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    color:snow;
+    z-index: 999;
+    opacity: .4;
 }
-a{
+.state-main{
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -30px;
+    height: 5em;
+}
+
+
+
+
+
+
+
+
+
+.main{
     text-decoration: none;
+    display: block;
+    position: relative;
+    margin: auto auto;
+    top: 10em;
+    width: 45em;
 }
 .contents{
     src:url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.ttf);
@@ -35,9 +62,7 @@ a{
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
     border-radius: 5px;
     display: flex;
-    /* margin: 30% 2em; */
-    width: 50em;
-    height: 30em;
+    height: 25em;
 }
 /*
     左
@@ -46,20 +71,48 @@ a{
     background-color: rgb(0, 255, 255,.6);
     border-radius: 5px 0 0 5px;
     height: 100%;
+    width: 8em;
 }
-
+.menu{
+    padding: 0;
+    list-style: none;
+    color: white;
+    text-shadow: 2px 1px 5px rgb(0, 0, 0);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.HOME{
+    width: 100%;
+    margin: 1em 0;
+}
+.ABOUT{
+    font-size: 1em;
+    margin: 1em 0;
+}
 /*
     右
 */
 .right{
     text-align: center;
     flex: 1;
-    padding: 1em;
+}
+.right-HOME{
+    display: block;
+    size: 500em;
+    margin: 2em 2em;
+    animation-name: right-HOME;
+    animation-duration: 1s;
+}@keyframes right-HOME{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 .title{
     margin-top: 1em;
 }
 .item{
+    text-decoration: none;    
     margin: 6em 6em;
     display: flex;
     color: rgba(81,81,81,.9);
@@ -69,8 +122,9 @@ a{
 }
 .Blog{
     font-size: 3em;
+    text-decoration: none;
     color: #666;
-    padding: 10px 10px;
+    padding: 20px 20px;
     display: block;
     transition: transform .3s;
 }.Blog:hover {
@@ -78,8 +132,9 @@ a{
 }
 .Github{
     font-size: 3em;
+    text-decoration: none;
     color: #666;
-    padding: 10px 10px;
+    padding: 20px 20px;
     display: block;
     transition: transform .3s;
 }.Github:hover {
@@ -87,12 +142,50 @@ a{
 }
 .E-Mail{
     font-size: 3em;
+    text-decoration: none;
     color: #666;
-    padding: 10px 10px;
+    padding: 20px 20px;
     transition: transform .3s;
 }.E-Mail:hover {
     transform: rotate(360deg);
 }
+.right-ABOUT{
+    display: none;
+    animation-name: right-ABOUT;
+    animation-duration: 1s;
+}@keyframes right-ABOUT{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/*临时*/
+.ABOUT-demo{
+    text-decoration: line-through;
+    color: black;
+    background-color: black;
+    transition: all 1s;
+}.ABOUT-demo:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+}
+p{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     color: white;
@@ -100,18 +193,6 @@ a{
     text-shadow: 2px 1px 5px #666;
     text-align: center;
 }  
-
-
-
-.right-section{
-    display: block;
-    size: 500em;
-    margin: 2em 2em;
-    padding:  2em 2em;
-}
-.fa-home:before{
-    content: "\f015";
-}
 
 
 

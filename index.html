@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./img/logo/icon.png">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/action.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/about.js"></script>
     <script src="./js/Clock.js"></script>
     <!--Plug-in-Start-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -23,7 +23,6 @@
     <!--Plug-in-END-->
 </head>
 <body>
-
     <script>
         var backgroundRandom = parseInt(Math.random()*8+1)
         document.write('<div class="background" style="background-image:url(./img/background/'+backgroundRandom+'.jpg);"></div>');
@@ -31,21 +30,38 @@
     <main class="main">
         <div class="contents">  
             <div class="left">
-                <a href="https://music.163.com/#/my/m/music/playlist?id=7366701902">网易歌单</a>
-                <h1 class="icon"></h1>
+                <div class="avatar"></div>
+                <ul class="menu">
+                    <li>
+                        <a href="#" onclick="HOME()" class="HOME">HMOE</a>
+                    </li class="ABOUT">
+                    <li class="ABOUT">
+                    <a  href="#" onclick="ABOUT()"class="ABOUT">ABOUT</a>
+                    </li>
+                </ul>
+                <!-- <a href="https://music.163.com/#/my/m/music/playlist?id=7366701902">网易歌单</a>
+                <h1 class="icon"></h1> -->
             </div>
             <div class="right">
-                <section class="right-section" >
+                <section class="right-HOME" id="right-HOME">
                     <h1 class="title">占位符</h1>
                     <div class="item">               
                         <a href="https://xdkdex.github.io/index" class="Blog" id="Blog"></a>
                         <a href="https://github.com/XDKDEX" class="Github" id="Github"></a>
-                        <a href="mailto:XDKEX@outlook.com" class="E-Mail" id="E-Mail"></a>
+                        <a href="mailto:XDKDEX@outlook.com" class="E-Mail" id="E-Mail"></a>
                         <a></a>
                         <a></a>
                         <a></a>
                         <a></a>
                     </div>
+                </section>
+                <section class="right-ABOUT" id="right-ABOUT">
+                    <h2>&*$R#中...</h2>
+                    <span class="ABOUT-demo">写的跟屎山一样</span>
+                    <br>
+                    <span class="ABOUT-demo">我,秦始皇,打钱!</span>
+                    <p>所有的只是业余爱好,正如游戏一样(虽然我很少玩游戏</p>
+                    <a href="https://music.163.com/#/playlist?id=7366701902" style="color:aqua;;text-decoration:blink;">歌单</a>
                 </section>
             </div>
         </div>
